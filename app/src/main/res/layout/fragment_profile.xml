@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:background="#F1EDED">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/avatar_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_face" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#77000000">
+
+                <TextView
+                    android:id="@+id/name_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/White"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25sp"/>
+
+
+                <TextView
+                    android:id="@+id/email_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/White"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/phone_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/White"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="@color/colorPrimary"
+        app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        app:fab_labelStyle="@style/custom_Fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Edit Profile"
+            app:fab_icon="@drawable/ic_baseline_face_black"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/White"
+            android:layout_margin="15dp"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_editCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Edit Cover"
+            app:fab_icon="@drawable/ic_add_photo"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/White"
+            android:layout_margin="15dp"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Edit Name"
+            app:fab_icon="@drawable/ic_baseline_edit"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/White"
+            android:layout_margin="15dp"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="Edit Phone"
+            app:fab_icon="@drawable/ic_baseline_phone"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/White"
+            android:layout_margin="15dp"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
+
